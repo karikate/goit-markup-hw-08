@@ -1,3 +1,4 @@
+@import './utils/mixins';
 @import './utils/vars';
 @import './base/reset';
 @import './base/common';
@@ -5,7 +6,6 @@
 @import './utils/hidden';
 @import './components/modal';
 @import './utils/placeholders';
-
 
 @import './layout/header';
 @import './layout/logo';

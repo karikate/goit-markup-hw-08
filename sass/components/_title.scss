@@ -1,10 +1,40 @@
+.hero__title {
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 1.62;
+  @include mobile {
+    font-size: 26px;
+    line-height: 1.62;
+  }
+  @include desktop {
+    font-size: 44px;
+    line-height: 1.36;
+  }
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-top: 0;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+  @include mobile {
+    width: 360px;
+  }
+  @include desktop {
+    width: 696px;
+  }
+}
+
 .work__title,
 .team__title,
 .clients__title {
   font-weight: 700;
   font-size: 36px;
-  // line-height: 1.17;
   line-height: 1.18;
+  @include desktop {
+    line-height: 1.17;
+  }
   text-align: center;
   letter-spacing: 0.03em;
   color: inherit;
