@@ -8,6 +8,10 @@
     gap: 60px;
     justify-content: center;
     text-align: center;
+    @include desktop {
+      flex-wrap: nowrap;
+      gap: 70px;
+    }
   }
 }
 .address__wrap {
@@ -87,22 +91,19 @@
 .subscribe {
   min-width: 450px;
   align-items: center;
-  @include desktop {
-    margin-left: 93px;
-  }
 }
 
 .subscribe__wrap {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  flex-direction: column;
-  width: calc((100% - 30px) / 2);
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   @include desktop {
-    display: flex;
-    justify-content: space-between;
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: 570px;
+    gap: 8px;
   }
 }
 
@@ -118,6 +119,7 @@
 }
 
 .subscribe__input {
+  display: block;
   width: 450px;
   height: 50px;
   align-items: center;
@@ -130,11 +132,16 @@
   &::placeholder {
     padding-top: 15px;
   }
+  @include desktop {
+    width: 370px;
+  }
 }
 
 .subscribe__wrap button {
   padding: 10px 28px;
   display: flex;
+  align-items: center;
+  text-align: center;
 }
 
 .subscribe__icon {

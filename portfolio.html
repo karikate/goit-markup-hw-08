@@ -51,6 +51,51 @@
             >
           </div>
         </nav>
+        <button type="button" class="btn-menu-open">
+          <svg class="icon_open-mob" width="40" height="40">
+            <use href="./images/icon/icons.svg#icon-mob-menu"></use>
+          </svg>
+        </button>
+        <div class="mob-menu is-hidden">
+          <div class="container">
+            <button type="button" class="btn-menu-close">
+              <svg class="icon_open-mob" width="40" height="40">
+                <use href="./images/icon/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+            <div class="mob-menu__top">
+              <ul class="mob-menu__list list">
+                <li class="mob-menu__item">
+                  <a href="./index.html" class="mob-menu__link link">Студия</a>
+                </li>
+                <li class="mob-menu__item">
+                  <a href="./portfolio.html" class="mob-menu__link link">Портфолио</a>
+                </li>
+                <li class="mob-menu__item"><a href="" class="mob-menu__link link">Контакты</a></li>
+              </ul>
+            </div>
+            <div class="mob-menu__bottom">
+              <a href="tel=+380961111111" class="mob-menu__tel link"> +38 096 111 11 11</a>
+              <a href="mailto=info@devstudio.com" class="mob-menu__mail link">
+                info@devstudio.com</a
+              >
+              <ul class="mob-menu__soc">
+                <li class="mob__soc-item">
+                  <a href="" class="mob-soc__link link">Instagram </a>
+                </li>
+                <li class="mob__soc-item">
+                  <a href="" class="mob-soc__link link">Twitter </a>
+                </li>
+                <li class="mob__soc-item">
+                  <a href="" class="mob-soc__link link">Facebook </a>
+                </li>
+                <li class="mob__soc-item">
+                  <a href="" class="mob-soc__link link">LinkedIn </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
     <main>
@@ -67,12 +112,35 @@
           <ul class="portfolio__list list">
             <li class="portfolio__item">
               <div class="overley__wrap">
-                <img
-                  src="./images/portfolio/web-site-1.jpg"
-                  alt="ноутбук с сайтом"
-                  width="370"
-                  height="295"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio/desktop/1-project.jpg    1x,
+                      ./images/portfolio/desktop/1-project-2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/tablet/1-project-tab.jpg    1x,
+                      ./images/portfolio/tablet/1-project-tab-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/mobile/1-project-mob.jpg    1x,
+                      ./images/portfolio/mobile/1-project-mob-2x.jpg 2x
+                    "
+                    media="(min-width: 320px)"
+                  />
+                  <img
+                    src="./images/portfolio/mobile/1-project-mob.jpg"
+                    alt="ноутбук с сайтом"
+                    width="370"
+                    height="295"
+                  />
+                </picture>
                 <p class="overley__text">
                   Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
                   Все это позволит посетителю получить исчерпывающие сведения о компании или частном
@@ -86,12 +154,35 @@
             </li>
             <li class="portfolio__item">
               <div class="overley__wrap">
-                <img
-                  src="./images/portfolio/designer-1.jpg"
-                  alt="постер Орлеан против Голден стейт"
-                  width="370"
-                  height="295"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio/desktop/2-project.jpg    1x,
+                      ./images/portfolio/desktop/2-project-2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/tablet/2-project-tab.jpg    1x,
+                      ./images/portfolio/tablet/2-project-tab-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/mobile/2-project-mob.jpg    1x,
+                      ./images/portfolio/mobile/2-project-mob-2x.jpg 2x
+                    "
+                    media="(min-width: 320px)"
+                  />
+                  <img
+                    src="./images/portfolio/mobile/2-project-mob.jpg"
+                    alt="логотип ресторана"
+                    width="370"
+                    height="295"
+                  />
+                </picture>
                 <p class="overley__text">
                   Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
                   Все это позволит посетителю получить исчерпывающие сведения о компании или частном
@@ -107,12 +198,35 @@
             </li>
             <li class="portfolio__item">
               <div class="overley__wrap">
-                <img
-                  src="./images/portfolio/app-1.jpg"
-                  alt="логотип ресторана"
-                  width="370"
-                  height="295"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio/desktop/3-project.jpg    1x,
+                      ./images/portfolio/desktop/3-project-2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/tablet/3-project-tab.jpg    1x,
+                      ./images/portfolio/tablet/3-project-tab-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/mobile/3-project-mob.jpg    1x,
+                      ./images/portfolio/mobile/3-project-mob-2x.jpg 2x
+                    "
+                    media="(min-width: 320px)"
+                  />
+                  <img
+                    src="./images/portfolio/mobile/3-project-mob.jpg"
+                    alt="логотип ресторана"
+                    width="370"
+                    height="295"
+                  />
+                </picture>
                 <p class="overley__text">
                   Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
                   Все это позволит посетителю получить исчерпывающие сведения о компании или частном
@@ -126,12 +240,35 @@
             </li>
             <li class="portfolio__item">
               <div class="overley__wrap">
-                <img
-                  src="./images/portfolio/marketing-1.jpg"
-                  alt="наушники"
-                  width="370"
-                  height="295"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio/desktop/4-project.jpg    1x,
+                      ./images/portfolio/desktop/4-project-2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/tablet/4-project-tab.jpg    1x,
+                      ./images/portfolio/tablet/4-project-tab-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/mobile/4-project-mob.jpg    1x,
+                      ./images/portfolio/mobile/4-project-mob-2x.jpg 2x
+                    "
+                    media="(min-width: 320px)"
+                  />
+                  <img
+                    src="./images/portfolio/mobile/4-project-mob.jpg"
+                    alt="наушники"
+                    width="370"
+                    height="295"
+                  />
+                </picture>
                 <p class="overley__text">
                   Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
                   Все это позволит посетителю получить исчерпывающие сведения о компании или частном
@@ -145,12 +282,35 @@
             </li>
             <li class="portfolio__item">
               <div class="overley__wrap">
-                <img
-                  src="./images/portfolio/app-2.jpg"
-                  alt="две коробки"
-                  width="370"
-                  height="295"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio/desktop/5-project.jpg    1x,
+                      ./images/portfolio/desktop/5-project-2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/tablet/5-project-tab.jpg    1x,
+                      ./images/portfolio/tablet/5-project-tab-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/mobile/5-project-mob.jpg    1x,
+                      ./images/portfolio/mobile/5-project-mob-2x.jpg 2x
+                    "
+                    media="(min-width: 320px)"
+                  />
+                  <img
+                    src="./images/portfolio/mobile/5-project-mob.jpg"
+                    alt="две коробки"
+                    width="370"
+                    height="295"
+                  />
+                </picture>
                 <p class="overley__text">
                   Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
                   Все это позволит посетителю получить исчерпывающие сведения о компании или частном
@@ -164,12 +324,35 @@
             </li>
             <li class="portfolio__item">
               <div class="overley__wrap">
-                <img
-                  src="./images/portfolio/web-site-2.jpg"
-                  alt="экран с сайтом"
-                  width="370"
-                  height="295"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio/desktop/6-project.jpg    1x,
+                      ./images/portfolio/desktop/6-project-2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/tablet/6-project-tab.jpg    1x,
+                      ./images/portfolio/tablet/6-project-tab-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/mobile/6-project-mob.jpg    1x,
+                      ./images/portfolio/mobile/6-project-mob-2x.jpg 2x
+                    "
+                    media="(min-width: 320px)"
+                  />
+                  <img
+                    src="./images/portfolio/mobile/6-project-mob.jpg"
+                    alt="экран с сайтом"
+                    width="370"
+                    height="295"
+                  />
+                </picture>
                 <p class="overley__text">
                   Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
                   Все это позволит посетителю получить исчерпывающие сведения о компании или частном
@@ -183,12 +366,35 @@
             </li>
             <li class="portfolio__item">
               <div class="overley__wrap">
-                <img
-                  src="./images/portfolio/designer-2.jpg"
-                  alt="развернутый журнал"
-                  width="370"
-                  height="295"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio/desktop/7-project.jpg    1x,
+                      ./images/portfolio/desktop/7-project-2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/tablet/7-project-tab.jpg    1x,
+                      ./images/portfolio/tablet/7-project-tab-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/mobile/7-project-mob.jpg    1x,
+                      ./images/portfolio/mobile/7-project-mob-2x.jpg 2x
+                    "
+                    media="(min-width: 320px)"
+                  />
+                  <img
+                    src="./images/portfolio/mobile/7-project-mob.jpg"
+                    alt="развернутый журнал"
+                    width="370"
+                    height="295"
+                  />
+                </picture>
                 <p class="overley__text">
                   Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
                   Все это позволит посетителю получить исчерпывающие сведения о компании или частном
@@ -202,12 +408,35 @@
             </li>
             <li class="portfolio__item">
               <div class="overley__wrap">
-                <img
-                  src="./images/portfolio/marketing-2.jpg"
-                  alt="бирка с логотипом"
-                  width="370"
-                  height="295"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio/desktop/8-project.jpg    1x,
+                      ./images/portfolio/desktop/8-project-2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/tablet/8-project-tab.jpg    1x,
+                      ./images/portfolio/tablet/8-project-tab-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/mobile/8-project-mob.jpg    1x,
+                      ./images/portfolio/mobile/8-project-mob-2x.jpg 2x
+                    "
+                    media="(min-width: 320px)"
+                  />
+                  <img
+                    src="./images/portfolio/mobile/8-project-mob.jpg"
+                    alt="бирка с логотипом"
+                    width="370"
+                    height="295"
+                  />
+                </picture>
                 <p class="overley__text">
                   Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
                   Все это позволит посетителю получить исчерпывающие сведения о компании или частном
@@ -221,12 +450,35 @@
             </li>
             <li class="portfolio__item">
               <div class="overley__wrap">
-                <img
-                  src="./images/portfolio/app-3.jpg"
-                  alt="ноутбук с сайтом"
-                  width="370"
-                  height="295"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio/desktop/9-project.jpg    1x,
+                      ./images/portfolio/desktop/9-project-2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/tablet/9-project-tab.jpg    1x,
+                      ./images/portfolio/tablet/9-project-tab-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio/mobile/9-project-mob.jpg    1x,
+                      ./images/portfolio/mobile/9-project-mob-2x.jpg 2x
+                    "
+                    media="(min-width: 320px)"
+                  />
+                  <img
+                    src="./images/portfolio/mobile/9-project-mob.jpg"
+                    alt="ноутбук с сайтом"
+                    width="370"
+                    height="295"
+                  />
+                </picture>
                 <p class="overley__text">
                   Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
                   Все это позволит посетителю получить исчерпывающие сведения о компании или частном
@@ -298,19 +550,21 @@
         <div class="subscribe">
           <h2 class="subscribe__title">Подпишитесь на рассылку</h2>
           <div class="subscribe__wrap">
-          <form class="subscribe__modal">
-            <label>
-                <input type="email" class="subscribe__input" placeholder="E-mail">
-            </label>
-          </form>
-          <button type="button" class="btn">Подписаться
-            <svg class="subscribe__icon" width="24" height="24">
-              <use href="./images/icon/icons.svg#icon-send"></use>
-            </svg>
-          </button>
-        </div>
+            <form class="subscribe__modal">
+              <label>
+                <input type="email" class="subscribe__input" placeholder="E-mail" />
+              </label>
+            </form>
+            <button type="button" class="btn">
+              Подписаться
+              <svg class="subscribe__icon" width="24" height="24">
+                <use href="./images/icon/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
     </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

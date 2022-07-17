@@ -1,22 +1,22 @@
-.logo__wrap {
-margin-right: 93px;
-}
-
 .logo {
-font-family: 'Raleway';
-font-style: normal;
-font-weight: 700;
-font-size: 26px;
-line-height: 1.19;
-letter-spacing: 0.03em;
-text-decoration: none;
-color: var(--link-color);
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: calc(28 / 24);
+  @include desktop {
+    font-size: 26px;
+    line-height: 1.19;
+  }
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: var(--link-color);
 }
 
 .logo__origin {
-color: #000000;
+  color: #000000;
 }
-  
+
 .logo__contrast {
-color: #ffffff;
+  color: #ffffff;
 }
