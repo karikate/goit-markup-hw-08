@@ -225,6 +225,10 @@ img {
 }
 
 .check-box {
+  font-size: 14px;
+  line-height: 1.7142857143;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
   justify-content: center;
 }
 .check-box a {
@@ -234,20 +238,6 @@ img {
   border: 1px solid var(--title-color);
   margin-right: 7px;
   justify-content: center;
-}
-
-.check-text {
-  width: 100%;
-  font-size: 11px;
-  line-height: 1.1666666667;
-  letter-spacing: 0.03em;
-  color: var(--text-color);
-}
-@media screen and (min-width: 1200px) {
-  .check-text {
-    font-size: 14px;
-    line-height: 1.7142857143;
-  }
 }
 
 .input-check:checked + .check-box span {
@@ -262,6 +252,20 @@ img {
 }
 .input-check:checked + .check-box .check-icon {
   fill: var(--btn-text-color);
+}
+
+.check-text {
+  width: 100%;
+  font-size: 11px;
+  line-height: 1.1666666667;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+}
+@media screen and (min-width: 1200px) {
+  .check-text {
+    font-size: 14px;
+    line-height: 1.7142857143;
+  }
 }
 
 .modal-btn-send {

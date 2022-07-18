@@ -148,7 +148,10 @@
 }
 
 .check-box {
-  // min-width: 370px;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: var(--text-color);
   @extend %align-list;
   justify-content: center;
   a {
@@ -160,18 +163,6 @@
     @extend %align-list;
     justify-content: center;
   }
-}
-
-.check-text {
-  width: 100%;
-  font-size: 11px;
-  line-height: calc(14 / 12);
-  @include desktop {
-    font-size: 14px;
-    line-height: calc(24 / 14);
-  }
-  letter-spacing: 0.03em;
-  color: var(--text-color);
 }
 
 .input-check:checked + .check-box span {
@@ -186,6 +177,18 @@
   .input-check:checked + .check-box & {
     fill: var(--btn-text-color);
   }
+}
+
+.check-text {
+  width: 100%;
+  font-size: 11px;
+  line-height: calc(14 / 12);
+  @include desktop {
+    font-size: 14px;
+    line-height: calc(24 / 14);
+  }
+  letter-spacing: 0.03em;
+  color: var(--text-color);
 }
 
 .modal-btn-send {
