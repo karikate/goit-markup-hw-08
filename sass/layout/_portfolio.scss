@@ -5,6 +5,10 @@
 .portfolio {
   padding-top: 60px;
   padding-bottom: 60px;
+  @include desktop {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .filter__list {
@@ -15,8 +19,11 @@
   @include tablet {
     justify-content: center;
     align-items: center;
+    margin-bottom: 30px;
   }
-  // margin-bottom: 50px;
+  @include desktop {
+    margin-bottom: 40px;
+  }
 }
 
 .filter__item {

@@ -174,7 +174,7 @@
   color: var(--text-color);
 }
 
-.input-check:checked + .check-text span {
+.input-check:checked + .check-box span {
   background-color: var(--btn-background-color);
   border: none;
   border-radius: 2px;
@@ -183,7 +183,7 @@
 .check-icon {
   fill: transparent;
   padding: 2px;
-  .input-check:checked + .check-text & {
+  .input-check:checked + .check-box & {
     fill: var(--btn-text-color);
   }
 }

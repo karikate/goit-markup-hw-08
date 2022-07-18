@@ -15,7 +15,11 @@
 }
 
 .clients__item {
-  width: calc((100% - 30px) / 2);
+  width: 100%;
+  @include mobile {
+    width: calc((100% - 30px) / 2);
+  }
+
   height: 92px;
   border: 1px solid var(--icon-color);
   border-radius: 4px;
