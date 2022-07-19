@@ -11,9 +11,12 @@
 
 .modal {
   position: absolute;
-  width: 450px;
+  width: 300px;
   min-height: 609px;
   padding: 40px;
+  @include mobile {
+    width: 450px;
+  }
   @include desktop {
     width: 528px;
     min-height: 581px;
@@ -60,7 +63,11 @@
 
 .modal-header {
   font-weight: 700;
-  font-size: 20px;
+  font-size: 15px;
+  @include mobile {
+    font-size: 20px;
+  }
+
   line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
